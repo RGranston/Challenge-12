@@ -8,11 +8,11 @@ Our model sperates the data in to two categories. The y variable noting high-ris
 
 ## Results
 
-* Machine Learning Model 1
- ![model1](Images/confusionmatrix.PNG)
+Machine Learning Model 1
+![model1](Images/confusionmatrix.PNG)
 
-* Machine Learning Model 2
- ![model2](Images/oversampled.PNG)
+Machine Learning Model 2
+![model2](Images/oversampled.PNG)
 
 ## Summary
 Both models did a pretty good job and they weren't wildly different.  Becuase we are looking for high-risk loans we do care more about "1" than we do "0".  Additionally, recall should be a better indicator of actually high-risk loans that were correctly predicted.
