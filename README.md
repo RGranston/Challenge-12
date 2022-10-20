@@ -11,3 +11,6 @@ First we create a logisitc regression model with the original data. Here is the 
 
 Then we use the Random Over Sampler and retrain the data.  Here is the confusion matrix:
 ![random_over_sampler](Images/oversampled.PNG)
+
+## Conclusion
+Open report.md for a complete conclusion.
