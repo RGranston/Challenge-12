@@ -1,31 +1,23 @@
-# Module 12 Report Template
+# Module 12 Report
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+The purpose of this analysis was to build a model that can predict which loans will be healthy and which will be high-risk. The data we are buliding this model on contained almost 80k loans, of which, 2500 of them were marked as high-risk. The data contained additional infomraitn such as: loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks and total debt.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+Our model sperates the data in to two categories. The y variable noting high-risk or healthy. The X variable having the rest of the loan data. Using LogisticRegression the model attempts to predict from X if the loan will be healthy or high-risk and then checks the accuracy with y.
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+ ![model1](Images/confusionmatrix.PNG)
 
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+ ![model2](Images/oversampled.PNG)
 
 ## Summary
+Both models did a pretty good job and they weren't wildly different.  Becuase we are looking for high-risk loans we do care more about "1" than we do "0".  Additionally, recall should be a better indicator of actually high-risk loans that were correctly predicted.
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+With this in mind I would recommend using the oversampled Model 2 as it has a much higher recall score of 99% compared to 91%.
