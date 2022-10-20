@@ -9,9 +9,11 @@ Our model sperates the data in to two categories. The y variable noting high-ris
 ## Results
 
 Machine Learning Model 1
+
 ![model1](Images/confusionmatrix.PNG)
 
 Machine Learning Model 2
+
 ![model2](Images/oversampled.PNG)
 
 ## Summary
